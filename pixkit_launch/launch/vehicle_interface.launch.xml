@@ -5,7 +5,8 @@
   <include file="$(find-pkg-share pix_hooke_driver)/launch/pix_autoware_interface.launch.xml" />
   
   <include file="$(find-pkg-share pixkit_launch)/launch/ros2_socketcan/socket_can0_bridge.launch.xml" />
-  <include file="$(find-pkg-share pixkit_launch)/launch/ros2_socketcan/socket_can1_bridge.launch.xml" />
+  <!-- ONLY ONE CAN INTERFACE IS USED -->
+  <!-- <include file="$(find-pkg-share pixkit_launch)/launch/ros2_socketcan/socket_can1_bridge.launch.xml" /> -->
 
   <include file="$(find-pkg-share pixkit_launch)/launch/raw_vehicle_cmd_converter/raw_vehicle_converter.launch.xml" />
 </launch>
