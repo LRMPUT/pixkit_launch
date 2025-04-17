@@ -9,7 +9,7 @@
   <arg name="output_actuation_cmd" default="/control/command/actuation_cmd"/>
   <arg name="output_steering_status" default="/vehicle/status/steering_status"/>
 
-  <node pkg="autoware_raw_vehicle_cmd_converter" exec="autoware_raw_vehicle_cmd_converter_node" name="raw_vehicle_cmd_converter" output="screen">
+  <node pkg="autoware_raw_vehicle_cmd_converter" exec="autoware_raw_vehicle_cmd_converter_node" name="autoware_raw_vehicle_cmd_converter_node" output="screen">
     <param from="$(var config_file)" allow_substs="true"/>
     <remap from="~/input/control_cmd" to="$(var input_control_cmd)"/>
     <remap from="~/input/odometry" to="$(var input_odometry)"/>
